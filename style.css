@@ -127,5 +127,24 @@ h2 {
 }
 
 .container-2 {
-    background-color: darkblue;
+    display: flex;
+    /*background-color: darkblue;*/
+}
+.container-2 div {
+    /*background-color: #F2059F;*/
+    display: block;
+    text-align: justify;
+}
+.container-2 div img {
+    max-width: 100%;   /*Size of the images on "quem somos"*/
+    /*height: 100%;*/
+    display: block;
+    margin: 0px;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    background-color: #F2F2F2;
+    margin: 0px;
 }
