@@ -24,7 +24,7 @@ h2 {
     text-align: center;
     margin-top: 0px;
     font-size: 60px;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .hero-image{
@@ -38,7 +38,7 @@ h2 {
 }
 .hero-text {  /*h1*/
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     color: black;
     position: absolute;
     top: 30%;
@@ -96,8 +96,9 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 20px;
+ /*   padding-bottom: 20px;*/
     /*background-color: rgb(236, 144, 232);*/
+    margin: 0;
 }
 
 .container-1 div {
@@ -135,7 +136,8 @@ h2 {
     align-items: center;
     /*background-color: rgb(195, 195, 236);*/
     flex-direction: row-reverse;
-    padding: 50px;
+    /*padding: 50px;*/
+    margin: 0;
 }
 .container-2 div {
     display: block;
@@ -149,17 +151,11 @@ h2 {
     margin: 30px;
 }
 
-footer p {
-    font-size: 12px;
-    text-align: center;
-    background-color: #F2F2F2;
-    margin: 0px;
-}
-
 .container-3 {
     background: #115D8C;
     text-align: center;
-    padding: 50px;
+    /*padding: 50px;*/
+    margin: 0;
 }
 .container-3 li {
     display: inline-block;
@@ -171,5 +167,13 @@ footer p {
 .container-4 {
     /*background: chartreuse;*/
     text-align: center;
-    padding: 50px;
+    /*padding: 50px;*/
+    margin: 0;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    /*background-color: #F2F2F2;*/
+    margin: 5px;
 }
