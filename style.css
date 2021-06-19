@@ -104,10 +104,7 @@ h2 {
     /*background-color: red;*/
     display: block;
     text-align: center;
-    /*align-content: space-around;*/
-    
     margin: 10px;
-
 }
 .container-1 div img {
     max-width: 300px;   /*Size of the images on "serviços"*/
@@ -157,4 +154,22 @@ footer p {
     text-align: center;
     background-color: #F2F2F2;
     margin: 0px;
+}
+
+.container-3 {
+    background: #115D8C;
+    text-align: center;
+    padding: 50px;
+}
+.container-3 li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 40px 60px 40px 60px;
+    color: #F2F2F2;
+}
+
+.container-4 {
+    /*background: chartreuse;*/
+    text-align: center;
+    padding: 50px;
 }
