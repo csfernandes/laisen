@@ -1,20 +1,30 @@
 @charset "UTF-8";
 
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #F2059F;
+    --cor2: #BF1B86;
+    --cor3: #0367A6;
+    --cor4: #145E8C;
+    --cor5: #000;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
   }
 
-body, ul, li, p {
- /*   margin: 0px;
-    padding: 0px;*/
+/*body, ul, li, p {
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
-}
+}*/
 
 a { /*logo*/
     text-decoration: none;
@@ -43,7 +53,7 @@ h2 {
 .hero-text {  /*h1*/
     text-align: center;
     font-size: 32px;
-    color: black;
+    color: var(--cor5);
     position: absolute;
     top: 30%;
     left: 50%;
@@ -55,7 +65,7 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    background-image: linear-gradient(to right, white, #115D8C 70%);
+    background-image: linear-gradient(to right, var(--cor0), var(--cor4) 70%);
     align-items: center;
     padding: 10px 10px 10px 20px;    
 }
@@ -85,7 +95,7 @@ h2 {
 }
 
 .menu a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
     /*padding: 30px;*/
     display: flex;
     justify-content: center;
@@ -93,14 +103,18 @@ h2 {
  /*   text-decoration: none;
     text-align: center;*/
     /*background-color: #222;*/
-    font-size: 14px;
-    
+    font-size: 14px; 
+}
+
+.menu a:hover {
+    /*background-color: var(--cor0);*/
+    color: var(--cor1);
 }
 
 label[for="bt_menu"] {
     padding: 35px 0px;
-    background-color: #115D8C;
-    color: #F2F2F2;
+    background-color: var(--cor4);
+    color: var(--cor0);
     text-align: center;
     font-size: 30px;
     cursor: pointer;
@@ -110,8 +124,6 @@ label[for="bt_menu"] {
 }
 #bt_menu {
     display: none;
-    
-
 }
 
 label[for="bt_menu"] {
@@ -181,7 +193,7 @@ label[for="bt_menu"] {
 .buttons_saibamais {
     display: inline-block;
     text-align: center;
-    background-color: #115D8C;
+    background-color: var(--cor4);
     margin: 10px;
     padding: 10px 40px;
     border-radius: 20px;
@@ -189,7 +201,7 @@ label[for="bt_menu"] {
 
 .buttons_saibamais a {
     text-decoration: none;
-    color: #F2F2F2;
+    color: var(--cor0);
     font-size: 16px;
 }
 
@@ -216,7 +228,7 @@ label[for="bt_menu"] {
 }
 
 .container-3 {
-    background: #115D8C;
+    background: var(--cor4);
     text-align: center;
     /*padding: 50px;*/
     margin: 0;
@@ -225,7 +237,7 @@ label[for="bt_menu"] {
     display: inline-block;
     font-size: 20px;
     padding: 40px 60px 40px 60px;
-    color: #F2F2F2;
+    color: var(--cor0);
 }
 
 .container-4 {
