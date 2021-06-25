@@ -9,11 +9,17 @@
     --cor5: #000;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-texto-size: 18px;
+    --fonte-titles:  Arial, Verdana, Helvetica, sans-serif;
+    
+    
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--fonte-padrao);
 }
 
 html {
@@ -34,11 +40,16 @@ a { /*logo*/
     /*background-color: salmon;*/
 }
 
+h1 {
+    font-family: var(--fonte-titles);
+    font-size: 70px;
+}
 h2 {
+    font-family: var(--fonte-titles);
     text-align: center;
     margin-top: 0px;
-    font-size: 60px;
-    padding-top: 50px;
+    font-size: 50px;
+    padding: 50px 0px 30px 0px;
 }
 
 .hero-image{
@@ -81,7 +92,7 @@ h2 {
 .menu ul {
     list-style: none;
     position: relative;
-
+    
 }
 .menu ul li {
     width: 115px;
@@ -95,7 +106,7 @@ h2 {
 }
 
 .menu a {
-    font-family: var(--fonte-padrao);
+   /* font-family: var(--fonte-menu);*/
     /*padding: 30px;*/
     display: flex;
     justify-content: center;
@@ -172,7 +183,11 @@ label[for="bt_menu"] {
 
 }*/
 
-.container-1 {
+.container-serviços h2 {
+    display: inline;
+}
+
+.container-serviços {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -181,13 +196,13 @@ label[for="bt_menu"] {
     margin: 0;
 }
 
-.container-1 div {
+.container-serviços div {
     /*background-color: red;*/
     display: block;
     text-align: center;
     margin: 10px;
 }
-.container-1 div img {
+.container-serviços div img {
     max-width: 300px;   /*Size of the images on "serviços"*/
     display: block;
     margin: 20px;
@@ -209,46 +224,66 @@ label[for="bt_menu"] {
     font-size: 16px;
 }
 
-.container-2 {
+#section-quem-somos {
+    background-color: var(--cor0);
+    margin-top: 60px;
+}
+
+.container-quem-somos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /*background-color: rgb(195, 195, 236);*/
+    background-color: var(--cor0);
     flex-direction: row-reverse;
-    /*padding: 50px;*/
     margin: 0;
+    padding: 0px;
 }
-.container-2 div {
+.container-quem-somos div {
     display: block;
     text-align: justify;
     padding: 0px 20px;
     width: 400px;
 }
-.container-2 img {
+.container-quem-somos img {
     display: block;
     max-width: 400px;
     margin: 30px;
 }
+.container-quem-somos p {
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-texto-size);
+    padding-bottom: 20px;
+}
 
-.container-3 {
-    background: var(--cor4);
+#section-clients {
+    background-color: var(--cor0);
+}
+
+.container-clients {
+    background: var(--cor0);
     text-align: center;
     /*padding: 50px;*/
     margin: 0;
 }
-.container-3 li {
+.container-clients li {
     display: inline-block;
     font-size: 20px;
     padding: 40px 60px 40px 60px;
-    color: var(--cor0);
+    color: var(--cor5);
 }
 
-.container-4 {
+.container-contact {
     /*background: chartreuse;*/
+    font-family: var(--fonte-texto);
     text-align: center;
     /*padding: 50px;*/
     margin: 0;
+}
+
+.container-contact p {
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-texto-size);
 }
 
 .container-refs {
@@ -260,15 +295,19 @@ label[for="bt_menu"] {
     display: inline-block;
     text-align: center;
     color: var(--cor0);
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     padding: 20px 20px;
-    margin: 20px;
-    width: 160px;
+    margin: 20px 40px;
+    width: 130px;
+    font-family: var(--fonte-titles);
     /*background-color: red;*/
 }
 .container-refs p {
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
+    font-family: var(--fonte-titles);
+    font-weight: normal;
 }
 
 footer p {
