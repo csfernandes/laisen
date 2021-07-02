@@ -73,9 +73,10 @@ body {
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #f4f4f4;
-    color: var(--cor5);
+    background-color: var(--cor3);
+    /*color: var(--cor);*/
   }
+
   
   .header .logo {
     display: block;
@@ -161,9 +162,9 @@ body {
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  
 
-  @media (min-width: 800px) {
+
+  @media (min-width: 700px) {
     .header li {
       float: left;
     }
@@ -198,8 +199,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 .container-serviços h2 {
     display: inline;
@@ -244,7 +243,7 @@ body {
 
 #section-quem-somos {
     background-color: var(--cor0);
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 .container-quem-somos {
