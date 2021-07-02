@@ -12,33 +12,16 @@
     --fonte-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fonte-texto-size: 18px;
     --fonte-titles:  Arial, Verdana, Helvetica, sans-serif;
-    
-    
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--fonte-padrao);
 }
 
 html {
     scroll-behavior: smooth;
   }
-
-/*body, ul, li, p {
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-}*/
-
-a { /*logo*/
-    text-decoration: none;
-    color: white;
-    display: block;
-    text-align: center;
-    /*background-color: salmon;*/
-}
 
 h1 {
     font-family: var(--fonte-titles);
@@ -49,12 +32,157 @@ h2 {
     text-align: center;
     margin-top: 0px;
     font-size: 50px;
-    padding: 50px 0px 30px 0px;
+    padding: 70px 0px 30px 0px;
 }
 
-.hero-image{
-    background-image: url("images/background-origin.jpg");
-    height: 850px;
+body {
+    font-family: var(--fonte-padrao);
+    /*background-color: #f4f4f4;*/
+    font-size: 12px;
+}
+
+  a {
+    color: var(--cor0);
+    text-align: center;
+  }
+  
+  /* header */
+  
+  .header {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor4) 70%);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    /*background-color: #fff;*/
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+    color: var(--cor5);
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  .header .menu li img {
+      height: 15px;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 500px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+
+  @media (min-width: 800px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 15px 25px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+  .hero-image{
+    background-image: url("images/pincel-opa75.jpg");
+    height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,129 +194,12 @@ h2 {
     font-size: 32px;
     color: var(--cor5);
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 
-.header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    background-image: linear-gradient(to right, var(--cor0), var(--cor4) 70%);
-    align-items: center;
-    padding: 10px 10px 10px 20px;    
-}
-
-.menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 50px;       /*Height of the header*/
-    /*background: #222;*/
-}
-.menu ul {
-    list-style: none;
-    position: relative;
-    
-}
-.menu ul li {
-    width: 115px;
-    float: left;
-    
-}
-.menu ul li img {
-    /*width: 20px;*/
-    height: 15px;
-    padding: 5px;
-}
-
-.menu ul li a {
-   /* font-family: var(--fonte-menu);*/
-    /*padding: 30px;*/
-    display: block;
- /*   justify-content: flex-end;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;*/
-    /*background-color: #222;*/
-    font-size: 14px; 
-    text-align: center;
-    
-}
-
-.menu ul li a div {
-    display: block;
-    /*background-color: red;*/
-}
-
-.menu a:hover {
-    /*background-color: var(--cor0);*/
-    color: var(--cor1);
-}
-
-label[for="bt_menu"] {
-    padding: 22px 0px;
-    background-color: var(--cor4);
-    color: var(--cor0);
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    width: 50px;
-    /*height: 95px; */
-    
-}
-#bt_menu {
-    display: none;
-}
-
-label[for="bt_menu"] {
-    display: none;
-    float: right;
-}
-
-
-@media (max-width: 800px) {
-    label[for="bt_menu"] {
-        display: block;
-        
-    }
-
-    #bt_menu:checked ~ * .menu {
-       margin-left: 0;
-       height: 300px;
-    }
-
-    #bt_menu:checked ~ label[for="bt_menu"] {
-        height: 290px; 
-    }
-   
-    .menu {
-        margin-left: 100%;
-        transition: all .4s; 
-        max-width: 100%;
-        overflow: hidden;
-        
-    }
-    .menu ul {
-        width: 100%;
-    }
-
-    .menu ul li {
-        width: 100%;
-        float: none;
-        padding: 10px;
-    }
-}
-/*
-@media (max-width: 420px) {
-    label[for="bt_menu"] {
-        display: none;
-    }
-
-}*/
 
 .container-serviços h2 {
     display: inline;
