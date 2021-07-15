@@ -163,6 +163,9 @@ body {
     top: 0;
   }
 
+ /* .header .menu-btn:checked ~ .menu a:active {
+    background-color: red;
+  }*/
 
   @media (min-width: 700px) {
     .header li {
