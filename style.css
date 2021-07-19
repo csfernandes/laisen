@@ -101,7 +101,7 @@ body {
   
   .header .menu-icon {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     float: right;
     padding: 28px 20px;
     position: relative;
@@ -168,6 +168,9 @@ body {
   }*/
 
   @media (min-width: 700px) {
+    header {
+      height: 100%;
+    }
     .header li {
       float: left;
     }
