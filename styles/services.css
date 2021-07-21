@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.container-serviços h2 {
+    display: inline;
+}
+
+.container-serviços {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ /*   padding-bottom: 20px;*/
+    /*background-color: rgb(236, 144, 232);*/
+    margin: 0;
+}
+
+.container-serviços div {
+    /*background-color: red;*/
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+.container-serviços div img {
+    max-width: 300px;   /*Size of the images on "serviços"*/
+    display: block;
+    margin: 20px;
+}
+
+/*Saiba mais buttons*/
+.buttons_saibamais {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--cor4);
+    margin: 10px;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.buttons_saibamais a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 16px;
+}
+
+#section-quem-somos {
+    background-color: var(--cor0);
+    margin-top: 0px;
+}

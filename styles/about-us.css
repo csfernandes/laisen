@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#section-quem-somos {
+    background-color: var(--cor0);
+    margin-top: 0px;
+}
+
+.container-quem-somos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor0);
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0px;
+}
+.container-quem-somos div {
+    display: block;
+    text-align: justify;
+    padding: 0px 20px;
+    width: 400px;
+}
+.container-quem-somos img {
+    display: block;
+    max-width: 400px;
+    margin: 30px;
+}
+.container-quem-somos p {
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-texto-size);
+    padding-bottom: 20px;
+}

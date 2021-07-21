@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.container-contact {
+    /*background: chartreuse;*/
+    font-family: var(--fonte-texto);
+    text-align: center;
+    /*padding: 50px;*/
+    margin: 0;
+}
+
+.container-contact p {
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-texto-size);
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    /*background-color: #F2F2F2;*/
+    margin: 5px;
+}

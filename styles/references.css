@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.container-refs {
+    text-align: center;
+    background-color: var(--cor4);
+}
+
+.container-refs li {
+    display: inline-block;
+    text-align: center;
+    color: var(--cor0);
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px 20px;
+    margin: 20px 40px;
+    width: 130px;
+    font-family: var(--fonte-titles);
+    /*background-color: red;*/
+}
+.container-refs p {
+    font-size: 25px;
+    text-align: center;
+    font-family: var(--fonte-titles);
+    font-weight: normal;
+}

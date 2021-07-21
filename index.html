@@ -4,31 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laisen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon">
+    <title>LaisenPinturas WebSite</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/references.css">
+    <link rel="stylesheet" href="styles/clients.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
+    
     <header class="header">
-        <a href="" class="logo"><img src="logo.png" alt="logo" width="140px"></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#section-home"><img src="logos/homepage-white.png" alt="homepage"><div>Home</div></a></li>
-            <li><a href="#section-serviços"><img src="logos/service-provider-white.png" alt="serviços"><div>Serviços</div></a></li>
-            <li><a href="#section-quem-somos"><img src="logos/about-us-white.png" alt="Quem somos"><div>Quem somos</div></a></li>
-            <li><a href="#section-clients"><img src="logos/clients-white.png" alt="clientes"><div>Clientes</div></a></li>
-            <li><a href="#section-contacto"><img src="logos/phone-white.png" alt="contacto"><div>Contacto</div></a></li>
-        </ul>
+        <nav class="navbar">
+            <a href="#"><img src="logo.png" alt="LaisenPinturas" class="nav-logo"></a>
+            <ul class="nav-menu">
+                <a href="#section-home" class="nav-link">
+                    <li class="nav-item"><img src="logos/homepage-white.png" alt="home" class="nav-icons"></li>Home
+                </a>
+                <a href="#section-serviços" class="nav-link">
+                    <li class="nav-item"><img src="logos/service-provider-white.png" alt="serviços" class="nav-icons"></li>Serviços</a>
+                <a href="#section-quem-somos" class="nav-link">
+                    <li class="nav-item"><img src="logos/about-us-white.png" alt="quemsomos" class="nav-icons"></li>Quem somos
+                </a>
+                <a href="#section-clients" class="nav-link">
+                    <li class="nav-item"><img src="logos/clients-white.png" alt="clientes" class="nav-icons"></li>Clientes
+                </a>
+                <a href="#section-contacto" class="nav-link">
+                    <li class="nav-item"><img src="logos/phone-white.png" alt="contactos" class="nav-icons"></li>Contacto
+                </a>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="hero-image" id="section-home">
-            <div class="hero-text">
-                <h1>SERVIÇOS DE EXCELÊNCIA</h1>
+        <section id="section-home">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="slider/img1.jpg" style="width:100%">
+                  <div class="text">Lacagens</div>
+                </div>
+            
+                <div class="mySlides fade">
+                  <img src="slider/img2.jpg" style="width:100%">
+                  <div class="text">Isolamentos</div>
+                </div>
+            
+                <div class="mySlides fade">
+                  <img src="slider/img3.jpg" style="width:100%">
+                  <div class="text">Envernizamentos</div>
+                </div>
             </div>
-        </div>
-        <h2 id="section-serviços">SERVIÇOS</h2>
-        <section class="container-serviços">
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+       <!-------------SERVIÇOS---------------->
+       <h2 id="section-serviços">SERVIÇOS</h2>
+        <section class="container-serviços">    
             <div>
                 <img src="images/lacagens/lacagem1.jpg" alt="lacagens">
                 <p>Lacagens</p>
@@ -52,6 +93,7 @@
             </div>
         </section>
 
+        <!-------------Quem Somos---------------->
         <h2 id="section-quem-somos">QUEM SOMOS</h2>
         <section class="container-quem-somos">
             <img src="images/pinturas/pinturas2.jpg" alt="pintura">    
@@ -63,6 +105,7 @@
             </div>
         </section>
 
+        <!-------------Referências---------------->
         <section class="container-refs">
             <ul>
                 <li>2001<p>Ano Fundado</p></li>
@@ -70,7 +113,7 @@
             </ul>
         </section>
         
-        
+        <!-------------Clientes---------------->
         <h2 id="section-clients">CLIENTES</h2>
         <section class="container-clients">
             <ul>
@@ -90,6 +133,7 @@
             </ul>
         </section>
 
+        <!-------------Contacto---------------->
         <h2 id="section-contacto">CONTACTO</h2>
         <section class="container-contact">
             <h3>Informações</h3>
@@ -102,9 +146,12 @@
             <p>Tel: (+351) 962 328 885</p>
             <p>Tel: (+351) 253 944 144</p>
         </section>
+
     </main>
     <footer>
         <p>© 2021 by CSF</p>
     </footer>
-</body> 
+    <script src="script.js"></script>
+    
+</body>
 </html>
