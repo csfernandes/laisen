@@ -2,7 +2,10 @@
 
 #section-quem-somos {
     background-color: var(--cor0);
-    margin-top: 0px;
+}
+
+#section-quem-somos-2 {
+    background-color: var(--cor0);
 }
 
 .container-quem-somos {
@@ -12,8 +15,7 @@
     align-items: center;
     background-color: var(--cor0);
     flex-direction: row-reverse;
-    margin: 0;
-    padding: 0px;
+    padding: 20px;
 }
 .container-quem-somos div {
     display: block;
