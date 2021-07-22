@@ -1,18 +1,30 @@
 @charset "UTF-8";
 
 #section-clients {
-    background-color: var(--cor0);
+    background-color: white;
 }
 
 .container-clients {
-    background: var(--cor0);
+    background: white;
     text-align: center;
     /*padding: 50px;*/
     margin: 0;
 }
+
 .container-clients li {
     display: inline-block;
     font-size: 20px;
-    padding: 40px 60px 40px 60px;
-    color: var(--cor5);
+    font-weight: bold;
+    padding: 30px 40px;
+    /*color: var(--cor5);*/
+    /*background-color: red;*/
+    /*height: 250px;*/
+    
+    
+}
+
+.img-logo {
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
 }
