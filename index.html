@@ -15,7 +15,6 @@
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
-    
     <header class="header">
         <nav class="navbar">
             <a href="#"><img src="logo.png" alt="LaisenPinturas" class="nav-logo"></a>
@@ -42,21 +41,33 @@
             </div>
         </nav>
     </header>
+    
     <main>
+
+        <!-------------SLIDER---------------->
         <section id="section-home">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                  <img src="slider/img1.jpg" style="width:100%">
+                  <picture>
+                      <source media="(max-width: 639px)" srcset="slider/img1-p.jpg">
+                      <img src="slider/img1.jpg" class="img-slider">
+                    </picture>
                   <div class="text">Lacagens</div>
                 </div>
             
                 <div class="mySlides fade">
-                  <img src="slider/img2.jpg" style="width:100%">
+                  <picture>
+                      <source media="(max-width: 639px)" srcset="slider/img2-p.jpg">
+                      <img src="slider/img2.jpg" class="img-slider">
+                    </picture>
                   <div class="text">Isolamentos</div>
                 </div>
             
                 <div class="mySlides fade">
-                  <img src="slider/img3.jpg" style="width:100%">
+                  <picture>
+                      <source media="(max-width: 639px)" srcset="slider/img3-p.jpg">
+                      <img src="slider/img3.jpg" class="img-slider">
+                    </picture>
                   <div class="text">Envernizamentos</div>
                 </div>
             </div>
