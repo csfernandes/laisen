@@ -32,6 +32,18 @@
     padding: 20px;
 }
 
+/*
+.info3 {
+
+}
+*/
+
+.info3 img {
+    width: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
 footer p {
     font-size: 12px;
     text-align: center;
