@@ -28,7 +28,7 @@
 .container-serviços div img {
     max-width: 300px;   /*Size of the images on "serviços"*/
     display: block;
-    margin: 50px 20px 10px 20px;
+    margin: 50px 50px 10px 50px;
 }
 
 /*Saiba mais buttons*/
