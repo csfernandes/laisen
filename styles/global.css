@@ -12,7 +12,7 @@
     --fonte-nav: Arial, Verdana, Helvetica, sans-serif;
     --fonte-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fonte-texto-size: 18px;
-    --fonte-titles: 'Fira Sans';
+    --fonte-titles: 'Fira Sans', arial, sans-serif;
 }
 
 * {
