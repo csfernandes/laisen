@@ -58,7 +58,8 @@
 }
 
 .nav-icons {
-    height: 20px;
+    /*height: 20px;*/
+    width: 21px;
     padding-right: 7px;
 }
 
@@ -111,6 +112,18 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+.submenu-service {
+    display: block;
+    text-align: center;
+    color: white
+}
+
+.submenu-service:hover {
+    cursor: pointer;
+    color: var(--cor3);
+}
+
 #section-home {
     /*background-color: var(--cor0);*/
 }
