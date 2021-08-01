@@ -10,23 +10,24 @@
     <link rel="stylesheet" href="../styles/subpages.css">
     <link rel="shortcut icon" href="../logos/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="hideSubmenu()">
     <header class="header">
         <nav class="navbar">
             <a href="../index.html"><img src="../logo.png" alt="LaisenPinturas" class="nav-logo"></a>
             <ul class="nav-menu">
-                <a href="../index.html" class="nav-link">
+                <a href="../index.html" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="../logos/homepage-white.png" alt="home" class="nav-icons"></li>Home
                 </a>
-                <a href="../index.html#section-serviços" class="nav-link">
-                    <li class="nav-item"><img src="../logos/service-provider-white.png" alt="serviços" class="nav-icons"></li>Serviços</a>
-                <a href="../index.html#section-quem-somos" class="nav-link">
+                <a class="nav-link" onclick="submenu()">
+                    <li class="nav-item"><img src="../logos/service-provider-white.png" alt="serviços" class="nav-icons"></li>Serviços
+                </a> <!--"#section-serviços"-->
+                <a href="../index.html#section-quem-somos" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="../logos/about-us-white.png" alt="quemsomos" class="nav-icons"></li>Quem somos
                 </a>
-                <a href="../index.html#section-clients" class="nav-link">
+                <a href="../index.html#section-clients" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="../logos/clients-white.png" alt="clientes" class="nav-icons"></li>Clientes
                 </a>
-                <a href="../index.html#section-contacto" class="nav-link">
+                <a href="../index.html#section-contacto" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="../logos/phone-white.png" alt="contactos" class="nav-icons"></li>Contacto
                 </a>
             </ul>
@@ -36,8 +37,30 @@
                 <span class="bar"></span>
             </div>
         </nav>
-    </header>
-      <main>
+        <div class="submenu-service">
+            <ul id= "nav-menu2">
+                <a href="lacagens.html" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Lacagens</li>
+                </a>
+                <a href="isolamentos.html" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Isolamentos</li>
+                </a>
+                <a href="envernizamentos.html" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Envernizamentos</li>
+                </a>
+                <a href="pinturas.html" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Pinturas</li>
+                </a>
+                <a href="revestimentos.html" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Revestimentos</li>
+                </a>
+                <a href="outros.html" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Outros serviços</li>
+                </a>
+            </ul>
+        </div>
+        </header>
+        <main>
         <h1 id="section-quem-somos">Isolamentos</h1>
         <section class="subpages">
             <div class="slideshow-container">

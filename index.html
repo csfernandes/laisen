@@ -14,24 +14,24 @@
     <link rel="stylesheet" href="styles/contacts.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
-<body>
+<body onload="hideSubmenu()">
     <header class="header">
         <nav class="navbar">
             <a href="#"><img src="logo.png" alt="LaisenPinturas" class="nav-logo"></a>
             <ul class="nav-menu">
-                <a href="#section-home" class="nav-link">
+                <a href="#section-home" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="logos/homepage-white.png" alt="home" class="nav-icons"></li>Home
                 </a>
-                <a href="#section-serviços" class="nav-link">
+                <a class="nav-link" onclick="submenu()">
                     <li class="nav-item"><img src="logos/service-provider-white.png" alt="serviços" class="nav-icons"></li>Serviços
-                </a>
-                <a href="#section-quem-somos" class="nav-link">
+                </a> <!--"#section-serviços"-->
+                <a href="#section-quem-somos" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="logos/about-us-white.png" alt="quemsomos" class="nav-icons"></li>Quem somos
                 </a>
-                <a href="#section-clients" class="nav-link">
+                <a href="#section-clients" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="logos/clients-white.png" alt="clientes" class="nav-icons"></li>Clientes
                 </a>
-                <a href="#section-contacto" class="nav-link">
+                <a href="#section-contacto" class="nav-link" onclick="hideSubmenu()">
                     <li class="nav-item"><img src="logos/phone-white.png" alt="contactos" class="nav-icons"></li>Contacto
                 </a>
             </ul>
@@ -41,7 +41,28 @@
                 <span class="bar"></span>
             </div>
         </nav>
-
+        <div class="submenu-service">
+            <ul id= "nav-menu2">
+                <a href="#lacagens" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Lacagens</li>
+                </a>
+                <a href="#isolamentos" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Isolamentos</li>
+                </a>
+                <a href="#envernizamentos" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Envernizamentos</li>
+                </a>
+                <a href="#pinturas" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Pinturas</li>
+                </a>
+                <a href="#revestimentos" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Revestimentos</li>
+                </a>
+                <a href="#outros" class="nav-link2" onclick="hideSubmenu()">
+                    <li>Outros serviços</li>
+                </a>
+            </ul>
+        </div>
     </header>
     
     <main>
@@ -98,32 +119,32 @@
        <h1 id="section-serviços">SERVIÇOS</h1>
        <h2>Descubra os nossos serviços</h2>
         <section class="container-serviços">    
-            <div>
+            <div id="lacagens">
                 <img src="images/lacagens/lacagem1.jpg" alt="lacagens">
                 <p class="img-label">Lacagens</p>
                 <p><a href="subpages/lacagens.html" rel="next" class="buttons_saibamais">Saiba mais!</a></p>
             </div>
-            <div>
+            <div id="isolamentos">
                 <img src="images/isolamentos/isolamento1.jpg" alt="isolamentos">
                 <p class="img-label">Isolamentos</p>
                 <p><a href="subpages/isolamentos.html" rel="next" class="buttons_saibamais">Saiba mais!</a></p>
             </div>
-            <div>
+            <div id="envernizamentos">
                 <img src="images/envernizamentos/envernizamento1.jpg" alt="envernizamentos">
                 <p class="img-label">Envernizamentos</p>
                 <p><a href="subpages/envernizamentos.html" rel="next" class="buttons_saibamais">Saiba mais!</a></p>
             </div>
-            <div>
+            <div id="pinturas">
                 <img src="images/pinturas/pinturas1.jpg" alt="pinturas">
                 <p class="img-label">Pinturas</p>
                 <p><a href="subpages/pinturas.html" rel="next" class="buttons_saibamais">Saiba mais!</a></p>
             </div>
-            <div>
+            <div id="revestimentos">
                 <img src="images/pinturas/pinturas_decorativas2.jpg" alt="revestimentos">
                 <p class="img-label">Revestimentos</p>
                 <p><a href="subpages/revestimentos.html" rel="next" class="buttons_saibamais">Saiba mais!</a></p>
             </div>  
-            <div>
+            <div id="outros">
                 <img src="images/pinturas/pinturas_industriais1.jpg" alt="outros serviços">
                 <p class="img-label">Outros serviços</p>
                 <p><a href="subpages/outros.html" rel="next" class="buttons_saibamais">Saiba mais!</a></p>

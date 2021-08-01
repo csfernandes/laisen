@@ -5,7 +5,7 @@ var slideIndex = 0;
 
 hamburger.addEventListener("click", mobileMenu);
 navLink.forEach(n => n.addEventListener("click", closeMenu));
-/*showSlides();*/
+showSlides_first();
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -17,7 +17,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-function showSlides() {
+function showSlides_first() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -31,7 +31,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  setTimeout(showSlides_first, 5000); // Change image every 2 seconds
 }
 
 var slideIndex = 1;
@@ -65,3 +65,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+
+function submenu() {
+  var subm = document.querySelector("#nav-menu2");
+
+  subm.style.display = "flex";
+}
+
+function hideSubmenu() {
+  var subm = document.querySelector("#nav-menu2");
+
+  subm.style.display = "none";
+}
